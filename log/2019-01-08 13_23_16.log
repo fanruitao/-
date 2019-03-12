@@ -1,0 +1,6 @@
+[2019-01-08 13:23:16] [INFO] ***********************test_post_mobile_login2 START************************
+[2019-01-08 13:23:16] [INFO] 获取到的用例信息为： [['post_mobile_login2', 'get', '/uac/auth/user/verificationCode', "{'Content-Type':'application/json'}", {'mobileNo': '18221629115', 'action': 'login', 'ngTest': 'ngTest'}, 1.0, 200.0, '操作成功', '未注册过的用户获取验证码登录'], ['', 'post', '/uac/auth/mobile', "{'Content-Type':'application/x-www-form-urlencoded','Authorization':'Basic cGFhc2Nsb3VkLWNsaWVudC11YWM6cGFhc2Nsb3VkQ2xpZW50U2VjcmV0'}", {'mobile': '18221629115', 'smsCode': '9115'}, 1.0, 200.0, '操作成功', '']]
+[2019-01-08 13:23:16] [INFO] 第一步获取验证码
+[2019-01-08 13:23:17] [INFO] 第一步返回的请求内容为： {'code': 901003, 'message': '手机号未注册,mobile=18221629115', 'result': None, 'success': False}
+[2019-01-08 13:23:17] [INFO] 第二步登录
+[2019-01-08 13:23:17] [INFO] 返回的请求内容为： {'code': 10101001, 'message': '验证码错误', 'result': None, 'success': False}

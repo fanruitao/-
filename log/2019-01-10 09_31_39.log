@@ -1,0 +1,5 @@
+[2019-01-10 09:31:40] [INFO] ***********************test_get_userinfo START************************
+[2019-01-10 09:31:40] [INFO] 获取到的用例信息为： [['get_userinfo1', 'get', '/uac/user/userInfo', "{'Content-Type':'application/x-www-form-urlencoded','Authorization':''}", {'mobileNo': '18221629114', 'action': 'register', 'ngTest': 'ngTest'}, 1.0, 10011013.0, '手机号已存在', '注册过的手机号码获取验证码']]
+[2019-01-10 09:31:40] [INFO] 第一步获取验证码
+[2019-01-10 09:31:40] [INFO] 第一步返回的请求内容为： {'code': 9999100, 'message': 'JWT String argument cannot be null or empty.', 'result': None, 'success': False}
+[2019-01-10 09:31:40] [INFO] 返回的请求内容为： {'code': 9999100, 'message': 'JWT String argument cannot be null or empty.', 'result': None, 'success': False}

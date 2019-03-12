@@ -1,0 +1,30 @@
+[2019-01-15 15:54:56] [INFO] ***********************test_get_verification_code1 START************************
+[2019-01-15 15:54:56] [INFO] 获取到的用例信息为： ['get_verification_code1', 'get', '/uac/auth/user/verificationCode', "{'Content-Type':'application/json'}", {'mobileNo': '18221629114', 'action': 'register', 'ngTest': 'ngTest'}, 1.0, 10011013.0, '手机号已存在', '注册过的手机号码获取验证码']
+[2019-01-15 15:54:56] [INFO] 返回的请求内容为： {'code': 10011013, 'message': '手机号已存在', 'result': None, 'success': False}
+[2019-01-15 15:54:56] [INFO] ***********************test_get_verification_code1 END**************************
+[2019-01-15 15:54:56] [INFO] ***********************test_get_verification_code2 START************************
+[2019-01-15 15:54:56] [INFO] 获取到的用例信息为： ['get_verification_code2', 'get', '/uac/auth/user/verificationCode', "{'Content-Type':'application/json'}", {'mobileNo': '17000000101', 'action': 'register', 'ngTest': 'ngTest'}, 1.0, 200.0, '操作成功', '未注册过的手机号码获取验证码']
+[2019-01-15 15:54:58] [INFO] 返回的请求内容为： {'code': 200, 'message': '操作成功', 'result': None, 'success': True}
+[2019-01-15 15:54:58] [INFO] ***********************test_get_verification_code2 END**************************
+[2019-01-15 15:54:58] [INFO] ***********************test_get_verification_code3 START************************
+[2019-01-15 15:54:58] [INFO] 获取到的用例信息为： ['get_verification_code3', 'get', '/uac/auth/user/verificationCode', "{'Content-Type':'application/json'}", {'mobileNo': '18221629114', 'action': 'login', 'ngTest': 'ngTest'}, 1.0, 200.0, '操作成功', '已注册过的用户，登录时获取验证码']
+[2019-01-15 15:54:58] [INFO] 返回的请求内容为： {'code': 200, 'message': '操作成功', 'result': None, 'success': True}
+[2019-01-15 15:54:58] [INFO] ***********************test_get_verification_code3 END**************************
+[2019-01-15 15:54:58] [INFO] ***********************test_get_verification_code4 START************************
+[2019-01-15 15:54:59] [INFO] 获取到的用例信息为： ['get_verification_code4', 'get', '/uac/auth/user/verificationCode', "{'Content-Type':'application/json'}", {'mobileNo': '18221629110', 'action': 'login', 'ngTest': 'ngTest'}, 1.0, 901003.0, '手机号未注册', '未注册过的用户，登录时获取验证码']
+[2019-01-15 15:54:59] [INFO] 返回的请求内容为： {'code': 901003, 'message': '手机号未注册,mobile=18221629110', 'result': None, 'success': False}
+[2019-01-15 15:54:59] [INFO] ***********************test_get_verification_code4 END**************************
+[2019-01-15 15:54:59] [INFO] ***********************test_get_verification_code5 START************************
+[2019-01-15 15:54:59] [INFO] 获取到的用例信息为： ['get_verification_code5', 'get', '/uac/auth/user/verificationCode', "{'Content-Type':'application/json'}", {'mobileNo': '18221629114', 'action': 'resetPwd', 'ngTest': 'ngTest'}, 1.0, 200.0, '操作成功', '已注册过的用户，重置密码时获取验证码']
+[2019-01-15 15:55:00] [INFO] 返回的请求内容为： {'code': 200, 'message': '操作成功', 'result': None, 'success': True}
+[2019-01-15 15:55:00] [INFO] ***********************test_get_verification_code5 END**************************
+[2019-01-15 15:55:00] [INFO] ***********************test_get_verification_code6 START************************
+[2019-01-15 15:55:00] [INFO] 获取到的用例信息为： ['get_verification_code6', 'get', '/uac/auth/user/verificationCode', "{'Content-Type':'application/json'}", {'mobileNo': '18221629124', 'action': 'resetPwd', 'ngTest': 'ngTest'}, 1.0, 10011005.0, '找不到用户', '未注册过的用户，重置密码时获取验证码']
+[2019-01-15 15:55:00] [INFO] 返回的请求内容为： {'code': 10011005, 'message': '找不到用户,mobile=18221629124', 'result': None, 'success': False}
+[2019-01-15 15:55:00] [INFO] ***********************test_get_verification_code6 END**************************
+[2019-01-15 15:55:00] [INFO] ***********************test_get_verification_code7 START************************
+[2019-01-15 15:55:00] [INFO] 获取到的用例信息为： [['get_verification_code7', 'get', '/uac/auth/user/verificationCode', "{'Content-Type':'application/json'}", {'mobileNo': '18901942465', 'action': 'register', 'ngTest': 'ngTest'}, 1.0, 200.0, '操作成功', '获取注册码后进行注册，注册后并登录'], ['', 'post', '/app/v1/users/register', "{'Content-Type':'application/json'}", '{\n    "mobileNo":"18901942465",\n    "loginPwd": "666666",\n    "verificationCode": "2465"\n}', 1.0, 200.0, '操作成功', '']]
+[2019-01-15 15:55:00] [INFO] 第一步获取验证码
+[2019-01-15 15:55:00] [INFO] 第一步返回的请求内容为： {'code': 10011013, 'message': '手机号已存在', 'result': None, 'success': False}
+[2019-01-15 15:55:00] [INFO] 第二步登录注册
+[2019-01-15 15:55:00] [INFO] 返回的请求内容为： {'code': 10011013, 'message': '手机号已存在', 'result': None, 'success': False}

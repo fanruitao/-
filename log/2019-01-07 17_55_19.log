@@ -1,0 +1,6 @@
+[2019-01-07 17:55:19] [INFO] ***********************test_get_verification_code7 START************************
+[2019-01-07 17:55:19] [INFO] 获取到的用例信息为： [['get_verification_code7', 'get', '/uac/auth/user/verificationCode', '', {'mobileNo': '18221629114', 'action': 'register', 'ngTest': 'ngTest'}, 1.0, 200.0, '操作成功', '获取注册码后并登录'], ['', 'post', '/app/v1/users/register', '', '{\n    "mobileNo":"18221629118",\n    "loginPwd": "",\n    "verificationCode": "9118"\n}', 1.0, 200.0, '操作成功', '']]
+[2019-01-07 17:55:19] [INFO] 第一步获取激活码
+[2019-01-07 17:55:19] [INFO] 第一步返回的请求内容为： {'code': 10011013, 'message': '手机号已存在', 'result': None, 'success': False}
+[2019-01-07 17:55:19] [INFO] 第二步登录注册
+[2019-01-07 17:55:19] [INFO] 返回的请求内容为： {'code': 500, 'message': '内部异常', 'result': None, 'success': False}
